@@ -1,5 +1,6 @@
 # Shawn's Personal Config Files
 
+- "The best configs I've ever seen" - nobody, 2022
 
 ## Setting up the repo
 
