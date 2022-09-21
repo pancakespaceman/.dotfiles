@@ -107,10 +107,6 @@
 
 # Shortcuts
 
-
-# Open Terminal (Alacritty)
-cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty  
-
 # TODO https://github.com/koekeishiya/yabai/issues/725
 # YABAI Shortcuts
 
