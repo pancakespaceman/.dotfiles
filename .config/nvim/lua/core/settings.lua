@@ -18,7 +18,7 @@ set.termguicolors = true -- Enable GUI colors for the terminal to get true color
 -- setup undodir instead of swap file
 set.swapfile = false
 set.backup = false
-set.undodir = os.getenv("HOME") .. ".vim/undodir"
+set.undodir = os.getenv("HOME") .. "/.vim/undodir"
 set.undofile = true
 
 -- sync mac with vim clipboard

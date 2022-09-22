@@ -1,5 +1,5 @@
 require('packer').startup(function(use)
-  -- Package Manager 
+  -- Package Manager
   use 'wbthomason/packer.nvim'
 
   -- Git
@@ -15,12 +15,17 @@ require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter-textobjects'                         -- Additional textobjects for treesitter
 
   -- LSP
+  -- use 'williamboman/mason.nvim'                                             -- Manage external editor tooling i.e LSP servers
+  -- use 'williamboman/mason-lspconfig.nvim'                                   -- Automatically install language servers to stdpath
   use 'neovim/nvim-lspconfig'                                               -- Collection of configurations for built-in LSP client
-  use 'williamboman/mason.nvim'                                             -- Manage external editor tooling i.e LSP servers
-  use 'williamboman/mason-lspconfig.nvim'                                   -- Automatically install language servers to stdpath
 
   -- Auto Complete
   use { 'hrsh7th/nvim-cmp', requires = { 'hrsh7th/cmp-nvim-lsp' } }         -- Autocompletion
+
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
 
   -- Snippet Engine
   use { 'L3MON4D3/LuaSnip', requires = { 'saadparwaiz1/cmp_luasnip' } }     -- Snippet Engine and Snippet Expansion
@@ -28,7 +33,7 @@ require('packer').startup(function(use)
   -- Colorschemes
   use 'mjlbach/onedark.nvim'                                                -- Theme inspired by Atom
   use 'rebelot/kanagawa.nvim'
-  
+
   -- Status line
   use 'nvim-lualine/lualine.nvim'                                           -- Fancier statusline
 
