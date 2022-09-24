@@ -19,6 +19,9 @@ require('packer').startup(function(use)
   -- use 'williamboman/mason-lspconfig.nvim'                                   -- Automatically install language servers to stdpath
   use 'neovim/nvim-lspconfig'                                               -- Collection of configurations for built-in LSP client
 
+  -- Formatting and Linting
+  use 'sbdchd/neoformat'
+
   -- Auto Complete
   use { 'hrsh7th/nvim-cmp', requires = { 'hrsh7th/cmp-nvim-lsp' } }         -- Autocompletion
 

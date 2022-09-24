@@ -32,8 +32,7 @@ local function config(_config)
 	  local data = code_action.data.id
 	  return string.sub(data, #data - 1, #data) == ":0"
 	end,
-	apply = true
-      }) end)
+	apply = true     }) end)
       nnoremap("<leader>vrr", function() vim.lsp.buf.references() end)
       nnoremap("<leader>vrn", function() vim.lsp.buf.rename() end)
       inoremap("<C-h>", function() vim.lsp.buf.signature_help() end)

@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/saconverse/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/Users/saconverse/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/saconverse/.local/share/nvim/site/pack/packer/start/nvim-cmp",
