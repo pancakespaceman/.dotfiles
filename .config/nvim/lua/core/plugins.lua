@@ -2,6 +2,9 @@ require('packer').startup(function(use)
   -- Package Manager
   use 'wbthomason/packer.nvim'
 
+  -- Nvim optimization
+  use 'lewis6991/impatient.nvim'
+
   -- Git
   use 'tpope/vim-fugitive'                                                  -- Git commands in nvim
   use 'tpope/vim-rhubarb'                                                   -- Fugitive-companion to interact with github
@@ -13,6 +16,18 @@ require('packer').startup(function(use)
   -- Syntax Highlighting
   use 'nvim-treesitter/nvim-treesitter'                                     -- Highlight, edit, and navigate code
   use 'nvim-treesitter/nvim-treesitter-textobjects'                         -- Additional textobjects for treesitter
+
+  -- Auto close HTML
+  use 'windwp/nvim-ts-autotag'
+
+  -- Parens Rainbow
+  use 'p00f/nvim-ts-rainbow'
+
+  -- Auto pair brackets
+  use {
+    "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
 
   -- LSP
   -- use 'williamboman/mason.nvim'                                             -- Manage external editor tooling i.e LSP servers
