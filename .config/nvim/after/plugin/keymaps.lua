@@ -8,6 +8,9 @@ local nmap = Remap.nmap
 -- Project View (netrw)
 nnoremap("<leader>pv", ":Ex<CR>")
 
+-- Formatter
+nnoremap("<leader>fd", ":Neoformat<CR>")
+
 -- Navigation
 
 -- behave like other capitals
